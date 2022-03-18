@@ -25,7 +25,7 @@ body{
     top: 20%;
     left: 5%;
 }
-.slide{
+.layout .slide{
     width: 30%;
     height: 40%;
     position: absolute;
@@ -33,9 +33,7 @@ body{
     top: 40%;
     box-shadow: 0 0 15px,0 0 10px;
 }
-.slide div img{
-    /* width: 150px;
-    height: 400px; */
+.layout .slide div img{
     height: 379px;
 }
 .slide .carousel-indicators button{
@@ -128,4 +126,27 @@ body{
     position: absolute;
     left: 18%;
     top: 90px;
+}
+.closure{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 31%;
+}
+.closure .slide{
+    width: 30%;
+    height: 40%;
+    box-shadow: 0 0 10px,0 0 5px;
+    align-items: center;
+    height: 379px;
+}
+.closure .slide div img{
+    height: 379px;
+}
+.closure .slide div{
+    color: rgb(68, 32, 7);
+}
+.closure .slide div h2{
+   position: absolute;
+   left: 35%;
 }
