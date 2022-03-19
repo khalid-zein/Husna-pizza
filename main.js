@@ -3,4 +3,8 @@ $(document).ready(function(){
       $(".hide").hide();
       $("#display").show();
     });
+    $(".zein").click(function(){
+        $("#display").hide();
+        $(".hide").show();
+      });
 });
