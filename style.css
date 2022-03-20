@@ -279,3 +279,7 @@ input:focus{
     border-radius: 15px;
     color: white;
 }
+.ordering{
+    display: none;
+    
+}
