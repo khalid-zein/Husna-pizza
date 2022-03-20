@@ -232,6 +232,24 @@ body{
     text-align: center;
     font-size: 22px;
 }
+.order-pizza #error p{
+    position: absolute;
+}
+.order-pizza #error{
+    border: 3px double greenyellow;
+    color: black;
+    position: relative;
+    top: -405px;
+    animation: error 1000ms;
+}
+@keyframes error {
+    0%{
+      top: -405px;
+    }
+    100% {
+      top: -405px;
+    }
+}
 .order-pizza select{
     width: 80%;
     height: 45px;
@@ -301,16 +319,19 @@ input:focus{
 .hamza p{
     animation: result 5000ms;
     position: absolute;
-    top: -180px;
+    top: -190px;
+    left: 12%;
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
 }
 @keyframes result {
     0%{
-      top: -180px;
+      top: -190px;
     }
     20%,40%,60%,80%{
-        top: 20px;
+        top: -50px;
     }
     100% {
-      top: -180px;
+      top: -190px;
     }
 }

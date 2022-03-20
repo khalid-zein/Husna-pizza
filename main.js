@@ -15,16 +15,18 @@ omar.addEventListener("click", function(event) {
     event.preventDefault();
     let address = document.getElementById("address").value;
     let approval = document.getElementById("jamalulleyl");
+    let error = document.getElementById("error");
 
 
     if (address === ""){
-        alert("please enter your delivery address!");
+       return error.innerHTML = "please enter your delivery address!";
     }else if (address){
             $(".order-pizza").hide();
             $(".ordering").show();
 
           approval.innerHTML = "Thank you for choosing Husna's pizza,please start your order now for it to be delivered in, " + address + ", in 30mins time with 200ksh/= additional for delivery";
    }
+   error.innerHTML = "";
 
 
 });
