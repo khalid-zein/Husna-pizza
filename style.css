@@ -220,7 +220,7 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 30%;
+    top: 20%;
 }
 .order-pizza{
     color: white;
@@ -239,15 +239,15 @@ body{
     border: 3px double greenyellow;
     color: black;
     position: relative;
-    top: -405px;
+    top: -308px;
     animation: error 1000ms;
 }
 @keyframes error {
     0%{
-      top: -405px;
+      top: -308px;
     }
     100% {
-      top: -405px;
+      top: -308px;
     }
 }
 .order-pizza select{
@@ -317,21 +317,72 @@ input:focus{
     justify-content: space-around;
 }
 .hamza p{
-    animation: result 5000ms;
+    animation: result 10000ms;
     position: absolute;
-    top: -190px;
+    top: -330px;
     left: 12%;
     font-size: 20px;
     font-family: 'poppins', sans-serif;
+    background-color: rgb(240, 115, 33);
+    color: white;
 }
 @keyframes result {
     0%{
-      top: -190px;
+      top: -330px;
     }
     20%,40%,60%,80%{
         top: -50px;
     }
     100% {
-      top: -190px;
+      top: -330px;
     }
+}
+.select select{
+    background-color: rgb(240, 115, 33);
+    color: rgb(121, 13, 13);
+    width: 230px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.hamza input{
+    height: 40px;
+    width: 230px;
+    border-radius: 3px;
+    margin-top: 30px;
+    background-color: rgb(240, 115, 33);
+    color: white;
+}
+.hamza input::placeholder{
+    color: rgb(121, 13, 13);
+    font-size: 20px;
+    padding-left: 20px;
+}
+.hamza h1{
+    font-family: 'Tangerine', serif;
+    font-size: 60px;
+}
+.hamza div button{
+    background-color: rgb(240, 115, 33);
+    color: rgb(121, 13, 13);
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.hamza #khadija{
+    background-color: white;
+    border-radius: 5px;
+
+}
+.table{
+    display: none;
+}
+.table table{
+    position: relative;
+    top: 80px;
+    left: 30%;
+    width: 600px;
+    background-color: wheat;
 }

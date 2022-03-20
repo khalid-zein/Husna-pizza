@@ -7,7 +7,15 @@ $(document).ready(function(){
         $("#display").hide();
         $(".hide").show();
       });
+      $("#khadija").click(function(){
+        $(".ordering").hide();
+        $(".order-pizza").show();
+      });
 });
+
+function formReset() {
+    document.getElementById("myForm").reset();
+ }
 
 var order = document.getElementById("omar");
 
@@ -27,9 +35,14 @@ omar.addEventListener("click", function(event) {
           approval.innerHTML = "Thank you for choosing Husna's pizza,please start your order now for it to be delivered in, " + address + ", in 30mins time with 200ksh/= additional for delivery";
    }
    error.innerHTML = "";
+   formReset();
 
 
 });
+
+ function formReset() {
+    document.getElementById("form").reset();
+ }
  let select = document.getElementById("checkout");
 
  checkout.addEventListener("click", function (event){
@@ -41,6 +54,10 @@ omar.addEventListener("click", function(event) {
     let delivery = 200;
     let total = (parseInt(size) + parseInt(crust) + parseInt(topping) + delivery) * number;
     console.log(total);
+
+    $(".table").show();
+
+    formReset();
 
 
  });

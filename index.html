@@ -289,6 +289,7 @@
        </div>
        <h1>START YOUR ORDER</h1>
        <p>Get your favourite pizza delivered in 30 minutes!</p>
+       <form id="myForm">
        <select name="" id="">
          <option value="">Delivery</option>
          <option value="">Pickup</option>
@@ -296,6 +297,7 @@
        <div>
           <input type="text" placeholder=" &#xf3c5;        Address" id="address">
        </div>
+       </form>
        <div class="find" id="omar">
          <button>Find Nearest Store</button>
        </div>
@@ -307,6 +309,7 @@
         <div class="hamza">
           <p id="jamalulleyl"></p>
 
+          <h1>"Do good. Be nice. Order pizza. Repeat." - Anonymous</h1>
           <div class="image">
             <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home-7.jpg" alt="">
             <img src="https://media.istockphoto.com/photos/cheesy-pepperoni-pizza-picture-id938742222?k=20&m=938742222&s=612x612&w=0&h=X5AlEERlt4h86X7U7vlGz3bDaDDGQl4C3MuU99u2ZwQ=" alt="">
@@ -319,7 +322,7 @@
             <h2>CRUST</h2>
           </div>
 
-          <form action="">
+          <form id="form">
            <div class="select">
             <select name="" id="size" required>
               <option value="1000">Large @1000</option>
@@ -344,7 +347,30 @@
               <button type="submit"id="checkout">Submit</button>
            </div>
           </form>
+          <button id="khadija">PREV</button>
        </div>
+       <div class="table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Order No.</th>
+              <th scope="col">Pizza Size</th>
+              <th scope="col">Toppings</th>
+              <th scope="col">Crust</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="pizza">
+            <tr>
+              <th scope="row">1</th>
+              <td id="size"></td>
+              <td id="toppings"></td>
+              <td id="crust"></td>
+              <td id="total"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
        </div>
      </div>
 
