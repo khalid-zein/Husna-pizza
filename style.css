@@ -281,5 +281,36 @@ input:focus{
 }
 .ordering{
     display: none;
-    
+    position: relative;
+    top: 5%;
+}
+.ordering .husna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamza div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+}
+.hamza div{
+    display: flex;
+    justify-content: space-around;
+}
+.hamza p{
+    animation: result 5000ms;
+    position: absolute;
+    top: -180px;
+}
+@keyframes result {
+    0%{
+      top: -180px;
+    }
+    20%,40%,60%,80%{
+        top: 20px;
+    }
+    100% {
+      top: -180px;
+    }
 }
