@@ -11,7 +11,7 @@ https://khalid-zein.github.io/Husna-pizza/
 
 ## Installation
 1. open terminal(Ctrl+Alt+T)
-2. git clone ```git@github.com:khalid-zein/Delani-studio.git```
+2. git clone ```git@github.com:khalid-zein/Husna-pizza.git```
 3. cd Delani-studio
 4. code . or atom . depending on the text editor of your choice.
 
@@ -24,11 +24,11 @@ https://khalid-zein.github.io/Husna-pizza/
 
 ## BDD
 
-|Behaviour             | Input                                 |                                     output|
-| ----------------------- | ------------------------------------- | ----------------------------------------- |
-| Enter your name         |  Khalid Zein                          |                                           |
-| Enter yor Email Addres  |  khalidzein@gmail.com                 |                                           |
-| Enter your message      |  I would like to collaborate with you | Pop up"Khalid zein, we have received your                                                                           message.Thank you for reaching out to us."|
+|Input                         | Output                                                                   |                               Purpose     |
+| ---------------------------- | ------------------------------------------------------------------------ | ----------------------------------------- |
+| click place order            |  A page will display prompting you to choose either delivery or pickup   | To consider delivery if you want          |
+| Delivery Address             |  you will be alerted the delivery fee                                    | To deliver pizza at your comfort          |
+| Choose pizza of your choice  |  A breakdown of the total price of your order                            |                                           |
 
 
 ## Contact
