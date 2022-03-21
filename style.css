@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgb(245, 239, 239);
+    position: relative;
 }
 .layout{
     width: 100%;
@@ -384,4 +385,25 @@ input:focus{
     left: 30%;
     width: 600px;
     background-color: wheat;
+}
+#mum{
+    display: none;
+    position: absolute;
+    top: 88%;
+    /* right: 30%; */
+}
+#mum button{
+    border-radius: 20px;
+    height: 30px;
+    padding-top: 1px;
+}
+.modal{
+    background-image: url(https://images.all-free-download.com/images/graphicthumb/anti_fake_pattern_background_design_vector_530538.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.modal-content{
+    background-image: url(https://img.freepik.com/free-vector/food-vector-seamless-pattern-cuisine-fast-food-wallpaper-with-gastronomy-icons-brown-pastelle-sepia-color-texture-decorative-textile-wrapping-paper-design-bright-background-menu-receipts_106317-9577.jpg?size=626&ext=jpg);
+    background-size: cover;
+    background-position: center;
 }
