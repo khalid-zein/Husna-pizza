@@ -47,13 +47,13 @@ omar.addEventListener("click", function(event) {
 
  checkout.addEventListener("click", function (event){
     event.preventDefault();
-    let size = $("#size option:selected").val();
-    let crust = $("#crust option:selected").val();
-    let topping = $("#toppings option:selected").val();
+    let size = $("#size option:selected").text();
+    let crust = $("#crust option:selected").text();
+    let topping = $("#toppings option:selected").text();
     let number = $("#number").val();
     const delivery = 200;
-    let total = ((parseInt(size) + parseInt(crust) + parseInt(topping)) * number) + delivery;
-    console.log(total);
+    // let total = ((parseInt(size) + parseInt(crust) + parseInt(topping)) * number) + delivery;
+    // console.log(total);
 
     $(".table").show();
     quantity.innerHTML = (number);
@@ -61,9 +61,21 @@ omar.addEventListener("click", function(event) {
     toppingss.innerHTML = (topping);
     crusts.innerHTML = (crust);
     deliveries.innerHTML = (delivery);
-    totals.innerHTML = (total);
+    totals.innerHTML = totalPrice();
 
     formReset();
 
 
+
  });
+
+ const totalPrice = function () {
+    let sizess = $("#size option:selected").val();
+    let crustss = $("#crust option:selected").val();
+    let toppingss = $("#toppings option:selected").val();
+    let numberss = $("#number").val();
+    let delivery = 200;
+    let total = ((parseInt(sizess) + parseInt(crustss) + parseInt(toppingss)) * numberss) + delivery;
+    return total;
+ };
+
