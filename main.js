@@ -51,11 +51,17 @@ omar.addEventListener("click", function(event) {
     let crust = $("#crust option:selected").val();
     let topping = $("#toppings option:selected").val();
     let number = $("#number").val();
-    let delivery = 200;
-    let total = (parseInt(size) + parseInt(crust) + parseInt(topping) + delivery) * number;
+    const delivery = 200;
+    let total = ((parseInt(size) + parseInt(crust) + parseInt(topping)) * number) + delivery;
     console.log(total);
 
     $(".table").show();
+    quantity.innerHTML = (number);
+    sizes.innerHTML = (size);
+    toppingss.innerHTML = (topping);
+    crusts.innerHTML = (crust);
+    deliveries.innerHTML = (delivery);
+    totals.innerHTML = (total);
 
     formReset();
 
